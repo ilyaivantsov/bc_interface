@@ -107,7 +107,7 @@ mongoClient.connect(URL, function(err, database) {
         if (err) throw err;
         console.log("Collection created!");
     });
-    db = database.db("baseOftransactions");;
+    db = database.db("baseOftransactions");
     app.listen(3000)
 })
 
