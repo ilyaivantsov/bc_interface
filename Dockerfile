@@ -8,7 +8,7 @@ RUN \
   git clone --depth 1 https://github.com/ethereum/go-ethereum && \
   (cd go-ethereum && make geth) && \
   cp go-ethereum/build/bin/geth /geth && \
-  apt-get remove -y golang-1.9 make git gcc libc-dev && apt autoremove -y && apt-get clean && \
+  apt-get remove -y golang-1.9 make gcc libc-dev && apt autoremove -y && apt-get clean && \
   rm -rf /go-ethereum
 
 RUN mkdir -p /usr/src/app
